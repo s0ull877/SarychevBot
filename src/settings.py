@@ -20,6 +20,9 @@ class Settings(BaseSettings):
     db_port: int = Field(os.environ.get("DB_PORT"))
     db_name: str = Field(os.environ.get("DB_NAME"))
 
+    fatsecret_id: str = Field(os.environ.get("FATSECRET_ID"))
+    fatsecret_key: str = Field(os.environ.get("FATSECRET_KEY"))
+
 
 
     @property
